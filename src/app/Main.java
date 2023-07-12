@@ -27,7 +27,7 @@ public class Main {
     }
 
     private static String readFileData(String file) {
-        return new FileReadService().readFromFile(file);
+        return new FileReadService().readFromFile(file + Constants.DEFAULT_FORMAT);
     }
 
     private static String writeFileData(String file, String message) {
